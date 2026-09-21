@@ -1,0 +1,32 @@
+{
+  "Unregularized Vanilla": {
+    "latency_mean_ms": 0.91,
+    "latency_std_ms": 0.3,
+    "memory_mb": 8.2,
+    "relative_flops": 1.0
+  },
+  "Prompt-based Wrapper": {
+    "latency_mean_ms": 0.93,
+    "latency_std_ms": 0.27,
+    "memory_mb": 14.8,
+    "relative_flops": 1.45
+  },
+  "Sliding Window (W=16)": {
+    "latency_mean_ms": 1.01,
+    "latency_std_ms": 0.34,
+    "memory_mb": 9.4,
+    "relative_flops": 1.05
+  },
+  "External Memory (DNC)": {
+    "latency_mean_ms": 1.25,
+    "latency_std_ms": 0.27,
+    "memory_mb": 18.2,
+    "relative_flops": 1.72
+  },
+  "Geometric Persistence (Ours)": {
+    "latency_mean_ms": 1.06,
+    "latency_std_ms": 0.28,
+    "memory_mb": 8.6,
+    "relative_flops": 1.18
+  }
+}

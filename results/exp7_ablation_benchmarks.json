@@ -1,0 +1,414 @@
+{
+  "num_trials": 50,
+  "horizons": [
+    10,
+    25,
+    50,
+    75,
+    100,
+    150
+  ],
+  "table2_success_rates": {
+    "Unregularized": {
+      "10": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "25": {
+        "rate": 98.0,
+        "ci_95": [
+          89.5,
+          99.6
+        ]
+      },
+      "50": {
+        "rate": 78.0,
+        "ci_95": [
+          64.8,
+          87.2
+        ]
+      },
+      "75": {
+        "rate": 34.0,
+        "ci_95": [
+          22.4,
+          47.8
+        ]
+      },
+      "100": {
+        "rate": 4.0,
+        "ci_95": [
+          1.1,
+          13.5
+        ]
+      },
+      "150": {
+        "rate": 0.0,
+        "ci_95": [
+          0.0,
+          7.1
+        ]
+      }
+    },
+    "Prompt Wrapper": {
+      "10": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "25": {
+        "rate": 96.0,
+        "ci_95": [
+          86.5,
+          98.9
+        ]
+      },
+      "50": {
+        "rate": 74.0,
+        "ci_95": [
+          60.4,
+          84.1
+        ]
+      },
+      "75": {
+        "rate": 30.0,
+        "ci_95": [
+          19.1,
+          43.8
+        ]
+      },
+      "100": {
+        "rate": 4.0,
+        "ci_95": [
+          1.1,
+          13.5
+        ]
+      },
+      "150": {
+        "rate": 0.0,
+        "ci_95": [
+          0.0,
+          7.1
+        ]
+      }
+    },
+    "Sliding Window (W=16)": {
+      "10": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "25": {
+        "rate": 98.0,
+        "ci_95": [
+          89.5,
+          99.6
+        ]
+      },
+      "50": {
+        "rate": 82.0,
+        "ci_95": [
+          69.2,
+          90.2
+        ]
+      },
+      "75": {
+        "rate": 46.0,
+        "ci_95": [
+          33.0,
+          59.6
+        ]
+      },
+      "100": {
+        "rate": 30.0,
+        "ci_95": [
+          19.1,
+          43.8
+        ]
+      },
+      "150": {
+        "rate": 0.0,
+        "ci_95": [
+          0.0,
+          7.1
+        ]
+      }
+    },
+    "External Memory (DNC)": {
+      "10": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "25": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "50": {
+        "rate": 76.0,
+        "ci_95": [
+          62.6,
+          85.7
+        ]
+      },
+      "75": {
+        "rate": 52.0,
+        "ci_95": [
+          38.5,
+          65.2
+        ]
+      },
+      "100": {
+        "rate": 36.0,
+        "ci_95": [
+          24.1,
+          49.9
+        ]
+      },
+      "150": {
+        "rate": 6.0,
+        "ci_95": [
+          2.1,
+          16.2
+        ]
+      }
+    },
+    "Projection-Only (No Damping)": {
+      "10": {
+        "rate": 98.0,
+        "ci_95": [
+          89.5,
+          99.6
+        ]
+      },
+      "25": {
+        "rate": 32.0,
+        "ci_95": [
+          20.8,
+          45.8
+        ]
+      },
+      "50": {
+        "rate": 12.0,
+        "ci_95": [
+          5.6,
+          23.8
+        ]
+      },
+      "75": {
+        "rate": 14.0,
+        "ci_95": [
+          7.0,
+          26.2
+        ]
+      },
+      "100": {
+        "rate": 12.0,
+        "ci_95": [
+          5.6,
+          23.8
+        ]
+      },
+      "150": {
+        "rate": 12.0,
+        "ci_95": [
+          5.6,
+          23.8
+        ]
+      }
+    },
+    "Damping-Only (No Projection)": {
+      "10": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "25": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "50": {
+        "rate": 98.0,
+        "ci_95": [
+          89.5,
+          99.6
+        ]
+      },
+      "75": {
+        "rate": 90.0,
+        "ci_95": [
+          78.6,
+          95.7
+        ]
+      },
+      "100": {
+        "rate": 82.0,
+        "ci_95": [
+          69.2,
+          90.2
+        ]
+      },
+      "150": {
+        "rate": 80.0,
+        "ci_95": [
+          67.0,
+          88.8
+        ]
+      }
+    },
+    "Geometric Persistence (Ours)": {
+      "10": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "25": {
+        "rate": 100.0,
+        "ci_95": [
+          92.9,
+          100.0
+        ]
+      },
+      "50": {
+        "rate": 98.0,
+        "ci_95": [
+          89.5,
+          99.6
+        ]
+      },
+      "75": {
+        "rate": 94.0,
+        "ci_95": [
+          83.8,
+          97.9
+        ]
+      },
+      "100": {
+        "rate": 86.0,
+        "ci_95": [
+          73.8,
+          93.0
+        ]
+      },
+      "150": {
+        "rate": 70.0,
+        "ci_95": [
+          56.2,
+          80.9
+        ]
+      }
+    }
+  },
+  "table3_stability_metrics": {
+    "Unregularized": {
+      "success_rate": 4.0,
+      "success_ci": [
+        1.1,
+        13.5
+      ],
+      "mean_ttf": 66.7,
+      "mean_ttf_sem": 2.97,
+      "divergence_rate": 0.0,
+      "peak_rho": 1.018,
+      "peak_rho_sem": 0.008,
+      "stability_margin": 0.0
+    },
+    "Prompt Wrapper": {
+      "success_rate": 4.0,
+      "success_ci": [
+        1.1,
+        13.5
+      ],
+      "mean_ttf": 59.2,
+      "mean_ttf_sem": 3.19,
+      "divergence_rate": 0.0,
+      "peak_rho": 1.064,
+      "peak_rho_sem": 0.017,
+      "stability_margin": 0.0
+    },
+    "Sliding Window (W=16)": {
+      "success_rate": 30.0,
+      "success_ci": [
+        19.1,
+        43.8
+      ],
+      "mean_ttf": 78.8,
+      "mean_ttf_sem": 3.18,
+      "divergence_rate": 0.0,
+      "peak_rho": 0.85,
+      "peak_rho_sem": 0.0,
+      "stability_margin": 0.15
+    },
+    "External Memory (DNC)": {
+      "success_rate": 36.0,
+      "success_ci": [
+        24.1,
+        49.9
+      ],
+      "mean_ttf": 73.9,
+      "mean_ttf_sem": 3.74,
+      "divergence_rate": 0.0,
+      "peak_rho": 1.068,
+      "peak_rho_sem": 0.012,
+      "stability_margin": 0.0
+    },
+    "Projection-Only (No Damping)": {
+      "success_rate": 12.0,
+      "success_ci": [
+        5.6,
+        23.8
+      ],
+      "mean_ttf": 31.5,
+      "mean_ttf_sem": 3.84,
+      "divergence_rate": 0.0,
+      "peak_rho": 0.82,
+      "peak_rho_sem": 0.0,
+      "stability_margin": 0.18
+    },
+    "Damping-Only (No Projection)": {
+      "success_rate": 82.0,
+      "success_ci": [
+        69.2,
+        90.2
+      ],
+      "mean_ttf": 95.3,
+      "mean_ttf_sem": 1.7,
+      "divergence_rate": 0.0,
+      "peak_rho": 0.94,
+      "peak_rho_sem": 0.0,
+      "stability_margin": 0.06
+    },
+    "Geometric Persistence (Ours)": {
+      "success_rate": 86.0,
+      "success_ci": [
+        73.8,
+        93.0
+      ],
+      "mean_ttf": 97.9,
+      "mean_ttf_sem": 0.85,
+      "divergence_rate": 0.0,
+      "peak_rho": 0.82,
+      "peak_rho_sem": 0.0,
+      "stability_margin": 0.18
+    }
+  }
+}

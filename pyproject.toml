@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-stability"
+version = "0.1.0"
+description = "A formal dynamical systems and benchmarking framework for closed-loop LLM agent stability and geometric memory persistence."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Agent Stability Contributors"}
+]
+keywords = [
+    "agentic-ai",
+    "large-language-models",
+    "closed-loop-orchestration",
+    "dynamical-systems",
+    "lyapunov-stability",
+    "stiefel-manifold",
+    "contractivity"
+]
+dependencies = [
+    "torch>=2.0.0",
+    "numpy>=1.24.0",
+    "scipy>=1.10.0",
+    "matplotlib>=3.7.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/agent-stability/agent-stability"
+"Bug Tracker" = "https://github.com/agent-stability/agent-stability/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "agents*", "envs*", "experiments*", "visualization*"]

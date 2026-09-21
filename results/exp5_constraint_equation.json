@@ -1,0 +1,116 @@
+{
+  "gamma": 0.95,
+  "delta_stable": 1.2,
+  "horizon": 60,
+  "dim_sweep": [
+    {
+      "dim": 32,
+      "rhs_bound": 0.0849,
+      "lhs_geometric": 0.0128,
+      "lhs_prompt_wrapper": 0.1444,
+      "lhs_unregularized": 0.1515,
+      "stable_geometric": true,
+      "stable_prompt": false,
+      "stable_unreg": false
+    },
+    {
+      "dim": 64,
+      "rhs_bound": 0.06,
+      "lhs_geometric": 0.0089,
+      "lhs_prompt_wrapper": 0.1429,
+      "lhs_unregularized": 0.1484,
+      "stable_geometric": true,
+      "stable_prompt": false,
+      "stable_unreg": false
+    },
+    {
+      "dim": 128,
+      "rhs_bound": 0.0424,
+      "lhs_geometric": 0.0063,
+      "lhs_prompt_wrapper": 0.1434,
+      "lhs_unregularized": 0.1522,
+      "stable_geometric": true,
+      "stable_prompt": false,
+      "stable_unreg": false
+    },
+    {
+      "dim": 256,
+      "rhs_bound": 0.03,
+      "lhs_geometric": 0.0044,
+      "lhs_prompt_wrapper": 0.1468,
+      "lhs_unregularized": 0.1531,
+      "stable_geometric": true,
+      "stable_prompt": false,
+      "stable_unreg": false
+    },
+    {
+      "dim": 512,
+      "rhs_bound": 0.0212,
+      "lhs_geometric": 0.0031,
+      "lhs_prompt_wrapper": 0.1403,
+      "lhs_unregularized": 0.1516,
+      "stable_geometric": true,
+      "stable_prompt": false,
+      "stable_unreg": false
+    }
+  ],
+  "surface_grid": {
+    "dims": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "kappas": [
+      1.0,
+      2.0,
+      5.0,
+      10.0,
+      20.0,
+      40.0
+    ],
+    "rhs_matrix": [
+      [
+        0.21213203435596423,
+        0.10606601717798211,
+        0.04242640687119285,
+        0.021213203435596423,
+        0.010606601717798212,
+        0.005303300858899106
+      ],
+      [
+        0.15,
+        0.075,
+        0.03,
+        0.015,
+        0.0075,
+        0.00375
+      ],
+      [
+        0.10606601717798211,
+        0.05303300858899106,
+        0.021213203435596423,
+        0.010606601717798212,
+        0.005303300858899106,
+        0.002651650429449553
+      ],
+      [
+        0.075,
+        0.0375,
+        0.015,
+        0.0075,
+        0.00375,
+        0.001875
+      ],
+      [
+        0.05303300858899106,
+        0.02651650429449553,
+        0.010606601717798212,
+        0.005303300858899106,
+        0.002651650429449553,
+        0.0013258252147247765
+      ]
+    ]
+  }
+}
