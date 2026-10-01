@@ -148,24 +148,6 @@ Generated plots will be saved to `figures/`.
 
 ---
 
-## Theoretical Framework
-
-### 1. Discrete-Time State Recurrence
-The high-dimensional latent language vector evolves according to:
-$$\mathbf{h}_{t+1} = f_\theta(\mathbf{h}_t, o_t) + \boldsymbol{\epsilon}_t$$
-where $\boldsymbol{\epsilon}_t = \boldsymbol{\epsilon}_t^{(i)} + \boldsymbol{\epsilon}_t^{(f)} + \boldsymbol{\epsilon}_t^{(c)}$.
-
-### 2. Agentic Stability Bound
-For a discrete-time Lyapunov candidate $V(\mathbf{h}_t) = \mathbf{h}_t^\top \mathbf{P} \mathbf{h}_t$, asymptotic trajectory boundedness requires:
-$$\rho\left(\prod_{k=0}^{T-1} \mathbf{J}_k\right) < 1 - \frac{\bar{\epsilon}}{\lambda_{\min}(\mathbf{P})}$$
-where $\mathbf{J}_k = \nabla_{\mathbf{h}} f_\theta(\mathbf{h}_k, o_k)$ is the transition Jacobian.
-
-### 3. Geometric Memory Persistence
-At each context update, internal representations are projected onto the orthogonal Stiefel manifold $\mathrm{St}(d, d) = \{\mathbf{Q} \in \mathbb{R}^{d \times d} : \mathbf{Q}^\top \mathbf{Q} = \mathbf{I}\}$ via polar decomposition:
-$$\mathbf{h}_{t+1} = \gamma \cdot \mathrm{Proj}_{\mathrm{Stiefel}}(\widetilde{\mathbf{h}}_{t+1}) = \gamma \cdot \mathbf{U}\mathbf{V}^\top \quad \text{where} \quad \widetilde{\mathbf{h}}_{t+1} = \mathbf{U}\mathbf{\Sigma}\mathbf{V}^\top$$
-Dissipation scalar $\gamma \in (0, 1)$ guarantees strict contractivity: $\|\mathbf{J}_t\|_{\mathrm{op}} \le 1 - \eta$.
-
----
 
 ## License
 
